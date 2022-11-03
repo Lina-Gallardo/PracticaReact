@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Compclase from './components/Compclase';
+import Compfuncion from './components/Compfuncion';
+import Parrafo from './components/Parrafo';
+import Listas from './components/Listas';
+import Variables from './components/Variables';
+import Eventos from './components/Eventos';
+import Estados from './components/Estados';
+import Contador from './components/Contador';
+import Formulario from './components/Formulario';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1>Hola</h1>
+      <Formulario/>
+      <Compclase></Compclase>
+      <Compfuncion></Compfuncion>
+      <Parrafo/>
+      <Variables/>
+      <Eventos/>
+      <Estados/>
+      <Contador/>
+      <Listas></Listas>
     </div>
   );
 }
